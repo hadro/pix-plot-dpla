@@ -794,7 +794,7 @@ function onMousemove(event) {
 function onDblclick(event) {
   var hash = window.location.href.split('/#')[1];
   if (hash) {
-  window.open('https://dp.la/item/'+hash+'?q='+hash);
+  window.open('http://dp.la/item/'+hash);
   }
 }
 
