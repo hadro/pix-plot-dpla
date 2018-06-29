@@ -4,5 +4,4 @@ data/
 *.swp
 venv/
 thumbs/
-output/thumbs/*
 output/image_vectors/*
