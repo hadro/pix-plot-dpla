@@ -1,5 +1,8 @@
 data/
-output/
 .DS_Store
 *.pem
 *.swp
+venv/
+thumbs/
+output/thumbs/
+output/image_vectors/

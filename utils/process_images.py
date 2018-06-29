@@ -236,7 +236,7 @@ class PixPlot:
       return model.fit_transform( np.array(image_vectors) )
 
     elif self.method == 'umap':
-      model = UMAP(n_neighbors=25, min_dist=0.00001, metric='correlation')
+      model = UMAP(n_neighbors=25, min_dist=0.00001, n_components=3, metric='correlation')
       return model.fit_transform( np.array(image_vectors) )
 
 
@@ -258,6 +258,7 @@ class PixPlot:
         os.path.splitext(os.path.basename(img))[0],
         int(i[0] * 100),
         int(i[1] * 100),
+        int(i[2] * 100),
         width,
         height
       ])
@@ -371,7 +372,7 @@ class PixPlot:
       cmd += '-size ' + str(thumb_size) + 'x' + str(thumb_size) + ' '
       cmd += '-geometry ' + str(thumb_size) + 'x' + str(thumb_size) + '+0+0 '
       cmd += '-tile ' + str(atlas_cols) + 'x' + str(atlas_cols) + ' '
-      cmd += '-quality 85 '
+      cmd += '-quality 100 '
       cmd += '-sampling-factor 4:2:0 '
       cmd += '"' + out_path + '"'
       os.system(cmd)
