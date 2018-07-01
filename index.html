@@ -3,17 +3,24 @@
   <head>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet'>
     <link rel='stylesheet' type='text/css' href='assets/css/style.css'>
-    <title>Visualizing Image Fields</title>
+    <title>PixPlot Fourth of July</title>
     <meta name='author' content='Douglas Duhaime'>
+    <meta charset="UTF-8">
   </head>
   <body>
     <header class='header'>
-      <img class='logo' src='assets/images/dhlab-logo.svg' alt='DHLab logo' />
-      <div class='app-name'>PixPlot</div>
-      <div class='tagline'>Image fields in a Local Collection</div>
+      <!-- <img class='logo' src='assets/images/dhlab-logo.svg' alt='DHLab logo' /> -->
+      <div class='app-name'>PixPlot Visualization of DPLA Fourth of July Images</div>
+      <div class='tagline'>Based on <a href="https://github.com/yaledhlab/pix-plot">PixPlot</a> from <a href="http://dhlab.yale.edu">Yale Digital Humanities Lab</a></div>
     </header>
     <div class='loader-scene'>
-      <p class='welcome'>This page visualizes a large image collection within an interactive WebGL scene. Each image was processed with an <a href='https://www.cs.unc.edu/~wliu/papers/GoogLeNet.pdf' target='_blank'>Inception</a> Convolutional Neural Network, trained on <a href='http://image-net.org/challenges/LSVRC/2012/' target='_blank'>ImageNet 2012</a>, and projected into a two-dimensional manifold with the <a href='https://github.com/lmcinnes/umap' target='_blank'>UMAP</a> algorithm such that similar images appear proximate to one another.</p>
+      <p class='welcome'>🎉🎆 Take a look at what a neural network thinks about the Fourth of July! 🎇🎉</p>
+      <p><br></p>
+      <p class="welcome">
+        This page visualizes 5,519 images from a search for <a href="https://dp.la/search?q=fourth+of+july">"Fourth of July"</a> on the <a href="https://dp.la/">Digital Public Library of America</a> (DPLA), which aggregates cultural heritage metadata from thousands of institutions.</p>
+        <p class="welcome">This is a WebGL visualization of how the <a href='https://www.cs.unc.edu/~wliu/papers/GoogLeNet.pdf' target='_blank'>Inception</a> Convolutional Neural Network, trained on <a href='http://image-net.org/challenges/LSVRC/2012/' target='_blank'>ImageNet 2012</a>, perceives "relatedness," and then a mapping of that the computed relationships between images into 3-dimensional space using <a href='https://github.com/lmcinnes/umap' target='_blank'>UMAP</a> algorithm such that similar images appear proximate to one another.</p>
+        <p class="welcome">Except for a few small modifications, this is based on the work and code published by the Yale Digital Humanities Labs in their <a href="https://github.com/yaledhlab/pix-plot">PixPlot repository</a>, which I learned about through an excellent <a href="https://vimeo.com/274922887">video presentation</a> from a Coalition for Networked Information (CNI) <a href="https://www.cni.org/topics/special-collections/neural-networks-machine-vision-for-the-visual-archive">project briefing</a>.</p>
+
       <div class='loader-container'>
         <div class='loader-icon'>
           <div class='blocks'>
