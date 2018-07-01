@@ -1,6 +1,16 @@
 # PixPlot
 
-This repository contains code that can be used to visualize tens of thousands of images in a two-dimensional projection within which similar images are clustered together. The image analysis uses Tensorflow's Inception bindings, and the visualization layer uses a custom WebGL viewer.
+## PLACEHOLDER README
+
+<p class="welcome">This page visualizes 5,519 <a href="https://dp.la/search?q=fourth+of+july">"Fourth of July"</a> images from <a href="https://dp.la/">Digital Public Library of America</a> (DPLA), which aggregates cultural heritage metadata from thousands of institutions.</p>
+<p class="welcome">Under the hood is a WebGL model of how the <a href='https://www.cs.unc.edu/~wliu/papers/GoogLeNet.pdf' target='_blank'>Inception</a> Convolutional Neural Network perceives "relatedness" and then a mapping of the computed relationships into 3-dimensional space using <a href='https://github.com/lmcinnes/umap' target='_blank'>UMAP</a> algorithm such that similar images appear near each other.</p>
+<p class="welcome">Except for a few small modifications, this is based on the work and code published by the Yale Digital Humanities Labs in their <a href="https://github.com/yaledhlab/pix-plot">PixPlot repository</a>, which I learned about through an excellent <a href="https://vimeo.com/274922887">video presentation</a> from a Coalition for Networked Information (CNI) <a href="https://www.cni.org/topics/special-collections/neural-networks-machine-vision-for-the-visual-archive">project briefing</a>.</p>
+--- 
+<h3 class="welcome">Controls:</h3>
+<p class="welcome">Click the clusters on the left to zoom to those areas, or use the mouse to navigate on your own.</p>
+<p class="welcome">Clicking an item will center the camera to that image, and double-clicking an item will take you to the record for that image in DPLA.</p>
+
+<!-- This repository contains code that can be used to visualize tens of thousands of images in a two-dimensional projection within which similar images are clustered together. The image analysis uses Tensorflow's Inception bindings, and the visualization layer uses a custom WebGL viewer.
 
 ![App preview](./assets/images/preview.png?raw=true)
 
@@ -80,7 +90,7 @@ You can add, remove or re-order these, change the labels to make them more meani
 | Collection | # Images | Collection Info | Image Source |
 | ---------- | -------- |  --------------- | ------------ |
 | [Per Bagge](https://goo.gl/uk8oUx) | 29,782 | [Bio](https://goo.gl/2jQYGz) | [Lund University](https://goo.gl/zHpebT) |
-| [Meserve-Kunhardt](https://goo.gl/sE3ZGy) | 27,000 | [Finding Aid](https://goo.gl/ESfcdB) | [Beinecke (Partial)](goo.gl/ESfcdB) |
+| [Meserve-Kunhardt](https://goo.gl/sE3ZGy) | 27,000 | [Finding Aid](https://goo.gl/ESfcdB) | [Beinecke (Partial)](goo.gl/ESfcdB) | -->
 
 
 ## Acknowledgements
