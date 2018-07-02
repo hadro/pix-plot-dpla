@@ -5,3 +5,4 @@ data/
 venv/
 thumbs/
 output/image_vectors/*
+output/atlas_files/256*
