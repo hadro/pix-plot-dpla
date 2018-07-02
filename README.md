@@ -95,4 +95,4 @@ You can add, remove or re-order these, change the labels to make them more meani
 
 ## Acknowledgements
 
-<p>I couldn't have done this without the awesome code and materials published by the <a href="http://digitalhumanities.yale.edu/">Yale Digital Humanities Lab</a> See their <a href="https://github.com/YaleDHLab/pix-plot">original repo</a> for much more thorough background and acknowledgements in terms of the data science and techniques that underlie this visualization.
+<p>I couldn't have done this without the awesome code and materials published by the <a href="http://digitalhumanities.yale.edu/">Yale Digital Humanities Lab</a>. See their <a href="https://github.com/YaleDHLab/pix-plot">original repo</a> for much more thorough background and acknowledgements in terms of the data science and techniques that underlie this visualization.
