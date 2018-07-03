@@ -58,6 +58,8 @@ var progress = 0;
 // Texture loader for XHR requests
 var textureLoader = new AjaxTextureLoader();
 
+
+
 /**
 * Generate  scene object with a background color
 **/
@@ -125,7 +127,7 @@ function getRenderer() {
 **/
 
 function getControls(camera, renderer) {
-  var controls = new THREE.TrackballControls(camera, renderer.domElement);
+  var controls = new THREE.MapControls(camera, renderer.domElement);
   controls.zoomSpeed = 0.4;
   controls.panSpeed = 0.4;
   return controls;
@@ -780,6 +782,7 @@ function addCanvasEventListeners() {
   canvas.addEventListener('dblclick', onDblclick, false)
 }
 
+
 /**
 * Set the current mouse coordinates {-1:1}
 * @param {Event} event - triggered on canvas mouse move
@@ -858,7 +861,7 @@ function flyTo(x, y, z) {
   // Use dummy camera focused on target as the slerp ending point
   var dummyCamera = camera.clone();
   dummyCamera.position.set(target.x, target.y, target.z);
-  var dummyControls = new THREE.TrackballControls(dummyCamera);
+  var dummyControls = new THREE.MapControls(dummyCamera);
   dummyControls.target.set(x, y, z);
   dummyControls.update();
   // Animate between the start and end quaternions
@@ -949,14 +952,3 @@ addWindowEventListeners()
 loadData()
 
 
-/** TRYING TO MAKE SLIGHTLY MORE ACCESSIBLE **/
-
-// // controls
-//         controls = new THREE.OrbitControls( camera, renderer.domElement );
-//         //controls.addEventListener( 'change', render ); // call this only in static scenes (i.e., if there is no animation loop)
-//         controls.enableDamping = true; // an animation loop is required when either damping or auto-rotation are enabled
-//         controls.dampingFactor = 0.25;
-//         controls.screenSpacePanning = false;
-//         controls.minDistance = 100;
-//         controls.maxDistance = 500
-//         controls.maxPolarAngle = Math.PI / 2;
