@@ -26,11 +26,11 @@ THREE.OrbitControls = function ( object, domElement ) {
 	this.target = new THREE.Vector3();
 
 	// How far you can dolly in and out ( PerspectiveCamera only )
-	this.minDistance = 0;
+	this.minDistance = -10000;
 	this.maxDistance = Infinity;
 
 	// How far you can zoom in and out ( OrthographicCamera only )
-	this.minZoom = 0;
+	this.minZoom = -10000;
 	this.maxZoom = Infinity;
 
 	// How far you can orbit vertically, upper and lower limits.
@@ -59,9 +59,9 @@ THREE.OrbitControls = function ( object, domElement ) {
 
 	// Set to false to disable panning
 	this.enablePan = true;
-	this.panSpeed = 1.0;
-	this.screenSpacePanning = false; // if true, pan in screen-space
-	this.keyPanSpeed = 7.0;	// pixels moved per arrow key push
+	this.panSpeed = 2.0;
+	this.screenSpacePanning = true; // if true, pan in screen-space
+	this.keyPanSpeed = 30.0;	// pixels moved per arrow key push
 
 	// Set to true to automatically rotate around the target
 	// If auto-rotate is enabled, you must call controls.update() in your animation loop
@@ -75,7 +75,7 @@ THREE.OrbitControls = function ( object, domElement ) {
 	this.keys = { LEFT: 37, UP: 38, RIGHT: 39, BOTTOM: 40 };
 
 	// Mouse buttons
-	this.mouseButtons = { ORBIT: THREE.MOUSE.LEFT, ZOOM: THREE.MOUSE.MIDDLE, PAN: THREE.MOUSE.RIGHT };
+	this.mouseButtons = { ORBIT: THREE.MOUSE.RIGHT, ZOOM: THREE.MOUSE.MIDDLE, PAN: THREE.MOUSE.LEFT };
 
 	// for reset
 	this.target0 = this.target.clone();

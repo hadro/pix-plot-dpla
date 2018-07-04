@@ -855,7 +855,7 @@ function onMouseup(event) {
 
 function flyTo(x, y, z) {
   // Specify the location to which we'll move the camera
-  var target = { x: x, y: y, z: z + 700 }
+  var target = { x: x, y: y, z: z + 400 }
   // Use initial camera quaternion as the slerp starting point
   var startQuaternion = camera.quaternion.clone();
   // Use dummy camera focused on target as the slerp ending point
